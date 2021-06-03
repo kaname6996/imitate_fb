@@ -1,0 +1,174 @@
+        @media (min-width:920px) {
+            .righthead{
+                display: flex;
+                justify-content: space-around;
+            }
+            .righthead>.rightpic{
+                width: 12%;
+            }
+            /* 小螢幕中間三條線 */
+            header>.interhead-line{
+                display: none;
+            }
+
+            
+        }
+        @media (max-width:920px) {
+            header>.interhead{
+                display: none;
+            }
+
+            header>.righthead>.user{
+                display: none;
+            }
+            .lefthead>.input1{
+                width: 150px;
+            }
+            .righthead{
+                display: flex;
+                justify-content:inherit;
+            }
+            .righthead>.rightpic{
+                width: 15%;
+            }
+            header>.interhead-line{
+                font-size: 20px;
+                display: flex;
+                flex-direction:column;
+                margin-right:5vw;
+                align-items: center;
+                justify-content:space-between;
+            }
+            .interhead-line>#line-line{
+                background-color: white;
+                padding: 0 5px 0 5px;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+    
+            .interhead-line>.line-line{
+                background-color: white;
+                padding: 0 5px 0 5px;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+            .line-linex{
+                display: none;
+            }
+                
+        } 
+
+        @media (max-width:400px) {
+            .righthead{
+                display: none;
+        }
+    
+    }
+
+
+        /* 頭*/
+        header{
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            width: 100%;height: 45px;
+            background-color: white;
+            color:gray;
+            line-height: 50px;
+            box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.329);
+            position: fixed;
+        }
+        /* 左邊的頭 */
+        .lefthead{
+            display: flex;
+            align-items:center;
+            position: relative;
+        }
+
+        #icon{
+            font-size:35px;
+            color: blue;
+            margin-left: 1vw;
+            margin-right: 5px;
+            line-height: 50px;
+        }
+        .input1{
+            border-radius:20px;
+            text-align: left;
+            border: #F0F2F5 solid 0.1px;
+            background-color: #F0F2F5;
+            height: 30px;
+            font-size: 10px;
+            width: 200px;
+            font-family: 'Noto Serif TC', serif;            
+            outline:none;
+        }
+        /* 中間的頭 */
+        .interhead {
+            width: 600px;
+            height: 45px;
+            text-align: center;
+            display: flex;
+            justify-content:space-around;
+        }
+        .interhead>div:hover{
+            background-color: #F0F2F5;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interhead>div{
+            width:100%;
+        }
+
+
+        /* 右邊的頭 */
+        .righthead{
+            width: 250px;
+            height: 45px;
+            text-align: center;
+            align-items: center;
+            margin-right: 1.5vw;
+        }
+        .righthead>div{
+            margin-right: 0.5vw
+        }
+
+        .righthead>.user{
+            width: 120px;
+            height: 70%;
+            display: flex;
+            border-radius:20px;
+            font-size: 8px;
+            justify-content:center;
+            align-items: center;
+            padding-left: 15px;
+            color: #1C1E21;
+            }
+        .righthead>.user>img{
+            width: 20px;
+            height: 20px;
+           margin-right: 10px;
+           border-radius: 50%;
+           box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.76);
+
+        }
+
+        .righthead>.user:hover{
+            background-color:#F0F2F5 ;
+            cursor: pointer;
+        }
+        .righthead>.rightpic{
+            background-color: #E4E6EB;
+            border-radius: 50%;
+            height:60%;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            color: #1C1E21;
+        }
+        .righthead>.rightpic:hover{
+            background-color: #d7d9df;
+            cursor: pointer;
+        }
