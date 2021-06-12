@@ -5,7 +5,6 @@ import './index.css'
 export default class Information extends Component {
     state={paste:[
         {id:'01',text:'個人資料',time:'製作日期：2021/6',pic:'./media/履歷個人資料.jpg'},
-        {id:'02',text:'學歷、工作經歷',time:'製作日期：2021/6',pic:'./media/學歷、工作經歷.jpg'},
         {id:'03',text:'專長與技能',time:'製作日期：2021/6',pic:'./media/can.jpg'},
     ]}
 

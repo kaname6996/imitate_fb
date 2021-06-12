@@ -34,7 +34,8 @@ class Header extends Component {
                             <div onClick={()=>this.Goto('website')} title='網站資源'><i className="fas fa-search"></i></div>
                             <Redirect to='/main'/>
                         </div>
-
+                        
+                        {/* 手機的三條線選單 */}
                         <div className='interhead-line'>
                             <div id='line-line' onClick={this.line}><i className="fas fa-bars" style={{marginTop:'2vh'}}></i></div>
                             <div onClick={()=>this.Goto('main')} className={line?'line-line':'line-linex'} title='作品動態'><i className="fas fa-home"></i></div>
@@ -45,9 +46,9 @@ class Header extends Component {
 
 
                         <div className='righthead'>
-                            <div title='個人履歷' className='user'><img src="./media/大頭照.jpg" alt=""/><b>王小明</b>&nbsp;&nbsp;&nbsp;</div>
+                            <div title='個人履歷' className='user' onClick={()=>this.Goto('autobiography')}><img src="./media/大頭照.jpg" alt=""/><b>鄭雲庭</b>&nbsp;&nbsp;&nbsp;</div>
                             <div className='rightpic'><i className="fas fa-plus"></i></div>
-                            <div title='聯絡方式' className='rightpic'><i className="fab fa-facebook-messenger"></i></div>
+                            <div title='聯絡方式' className='rightpic' onClick={()=>this.Goto('information')}><i className="fab fa-facebook-messenger"></i></div>
                             <div className='rightpic'><i className="fas fa-bell"></i></div>
                             <div className='rightpic'><i className="fas fa-sort-down"></i></div>
                         </div>

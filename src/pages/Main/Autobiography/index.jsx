@@ -7,7 +7,7 @@ import 'antd/dist/antd.css'
 
 export default class Information extends Component {
     state={paste:[
-        {id:'01',text:'我的自傳',time:'製作日期：2021/6',pic:'./media/自傳.jpg'},
+        {id:'01',text:'我的自傳',time:'製作日期：2021/6',pic:'./media/自傳.png'},
     ]}
 
 

@@ -13,7 +13,7 @@ export default class Aside extends Component {
             {id:'4',text:'逢甲大學畢業證書',img:'./media/畢業證書.jpg',done:false},
             {id:'5',text:'逢甲大學成績表',img:'./media/成績.jpg',done:false},
         ],
-        magnifier:false
+        magnifier:false,
     }
 
     change=(e)=>{
@@ -44,6 +44,22 @@ export default class Aside extends Component {
     magnifierxout=()=>{
         this.setState({magnifier:false})
     }
+
+    // 點esc關閉
+    closehomeout=(event)=>{
+        if(event.keyCode === 27) {
+            this.setState({magnifier:false})
+        }
+    }
+    componentDidMount(){
+        document.addEventListener("keydown", this.closehomeout);
+        }
+    componentWillUnmount(){
+        document.addEventListener("keydown", this.closehomeout);
+    }
+
+
+
 
     render() {
 

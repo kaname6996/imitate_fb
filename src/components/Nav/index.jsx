@@ -28,11 +28,8 @@ import './index.css'
                         <hr/>
                         <div className='fastgo'>
                             <div id='fastnogo'>曾經遇到的困難</div>
-                            <div id='fastgo'><img src="./media/npm.png" alt=""/> NPM的使用</div>
-                            <div id='fastgo'><img src="./media/2.jpeg" alt=""/> Flower Arts Club</div>
-                            <div id='fastgo'><img src="./media/3.jpeg" alt=""/> Taichi Club</div>
-                            <div id='fastgo'> <img src="./media/4.jpeg" alt=""/> Orchestra</div>
-                            <div id='fastgo' ><img src="./media/5.jpeg" alt=""/> Tea Ceremony Club</div>
+                            <div id='fastgo' onClick={()=>this.Goto('difficult')}><img src="./media/npm.png" alt=""/> NPM的使用</div>
+                            <div id='fastgo' onClick={()=>this.Goto('difficult')}><img src="./media/M.png" alt=""/> 如何在map里面使用ref函数</div>
                         </div>
                     </div>
 
