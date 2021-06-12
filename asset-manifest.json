@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/imitate_fb/static/css/main.8ffed35e.chunk.css",
+    "main.js": "/imitate_fb/static/js/main.104f20cc.chunk.js",
+    "main.js.map": "/imitate_fb/static/js/main.104f20cc.chunk.js.map",
+    "runtime-main.js": "/imitate_fb/static/js/runtime-main.f37cf638.js",
+    "runtime-main.js.map": "/imitate_fb/static/js/runtime-main.f37cf638.js.map",
+    "static/css/2.3c3a73a9.chunk.css": "/imitate_fb/static/css/2.3c3a73a9.chunk.css",
+    "static/js/2.f1420f1a.chunk.js": "/imitate_fb/static/js/2.f1420f1a.chunk.js",
+    "static/js/2.f1420f1a.chunk.js.map": "/imitate_fb/static/js/2.f1420f1a.chunk.js.map",
+    "index.html": "/imitate_fb/index.html",
+    "static/css/2.3c3a73a9.chunk.css.map": "/imitate_fb/static/css/2.3c3a73a9.chunk.css.map",
+    "static/css/main.8ffed35e.chunk.css.map": "/imitate_fb/static/css/main.8ffed35e.chunk.css.map",
+    "static/js/2.f1420f1a.chunk.js.LICENSE.txt": "/imitate_fb/static/js/2.f1420f1a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f37cf638.js",
+    "static/css/2.3c3a73a9.chunk.css",
+    "static/js/2.f1420f1a.chunk.js",
+    "static/css/main.8ffed35e.chunk.css",
+    "static/js/main.104f20cc.chunk.js"
+  ]
+}
