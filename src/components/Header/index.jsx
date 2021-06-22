@@ -3,6 +3,8 @@ import {withRouter,Redirect} from 'react-router-dom'
 import Main from '../../pages/Main'
 import Nav from '../Nav'
 import Aside from '../Aside'
+import axios from 'axios'
+import PubSub from 'pubsub-js'
 import './index.css'
 
 class Header extends Component {
@@ -17,6 +19,20 @@ class Header extends Component {
         const {line}=this.state
         this.setState({line:!line})
     }
+    apiuse=(e)=>{
+        if(e.keyCode === 13){
+            this.props.history.push(`/apiuse`)
+            //console.log(e.target.value)
+            e.target.value=''
+
+            axios.get( `https://api.unsplash.com/photos/?client_id=1PwoTE3c6FyFBXtzNIZH9W_DXuZAPFz-rl8f2kV_wz0`).then(
+                response=>{PubSub.publish('pics',{pics:response}) },//請求中
+            )
+                    
+        }
+    }
+
+
     render() {
         const {line}=this.state
         return (
@@ -24,7 +40,7 @@ class Header extends Component {
                     <header>
                         <div className="lefthead">
                             <i style={{cursor: 'pointer'}} className="fab fa-facebook" id='icon' onClick={()=>this.Goto('main')}></i>
-                            <input className='input1' type="text" placeholder=　　'　　搜尋Facebook...'/>
+                            <input onKeyDown={this.apiuse} className='input1' type="text" placeholder=　　'　　Enter搜尋圖片...'/>
                         </div>
 
                         <div className="interhead">

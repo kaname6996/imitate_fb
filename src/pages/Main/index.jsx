@@ -7,6 +7,7 @@ import Website from './Website'
 import Information from './Information'
 import Autobiography from './Autobiography'
 import Difficult from './Difficult'
+import Apiuse from './Apiuse'
 import './index.css'
 
 class Main extends Component {
@@ -44,6 +45,7 @@ class Main extends Component {
                             <Route path='/information' component={Information}/>
                             <Route path='/autobiography' component={Autobiography}/>
                             <Route path='/difficult' component={Difficult}/>
+                            <Route path='/apiuse' component={Apiuse}/>
                         </div>
                     </div>
 
